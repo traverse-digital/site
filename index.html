@@ -330,8 +330,15 @@
       background-color: rgba(15, 23, 42, 0.05) !important;
     }
     .hero-headline {
-      font-family: 'Alexandria', 'Cairo', sans-serif;
-      letter-spacing: -0.01em;
+      font-family: 'Cairo', 'Inter', sans-serif;
+      letter-spacing: 0;
+      line-height: 1.65 !important;
+    }
+    .hero-accent-solid {
+      color: #0088FF !important;
+    }
+    html.light-mode .hero-accent-solid {
+      color: #0062CC !important;
     }
     @keyframes aiFloat {
       0%, 100% { transform: translateY(0px); }
@@ -363,6 +370,58 @@
     html.light-mode .review-quote { color: #1E293B !important; }
     html.light-mode .price-badge { background-color: rgba(0, 136, 255, 0.1) !important; color: #0062CC !important; border-color: rgba(0, 136, 255, 0.25) !important; }
     .faq-item[open] .faq-chevron { transform: rotate(180deg); }
+
+    /* Light mode comprehensive fixes: Workflow, Contact, Forms, Modal, Arrows, Floating WA */
+    html.light-mode #workflow > div > div.grid > div {
+      background-color: #FFFFFF !important;
+      border-color: rgba(15, 23, 42, 0.12) !important;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
+    }
+    html.light-mode #workflow span.font-en {
+      color: #0062CC !important;
+    }
+    html.light-mode #contact .rounded-3xl {
+      background: linear-gradient(135deg, #FFFFFF 0%, #EFF6FF 100%) !important;
+      border-color: rgba(0, 136, 255, 0.25) !important;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08) !important;
+    }
+    html.light-mode #contact input,
+    html.light-mode #contact select,
+    html.light-mode #contact textarea,
+    html.light-mode #subscriptions input {
+      background-color: #FFFFFF !important;
+      color: #0F172A !important;
+      border-color: rgba(15, 23, 42, 0.2) !important;
+    }
+    html.light-mode #contact input::placeholder,
+    html.light-mode #contact textarea::placeholder,
+    html.light-mode #subscriptions input::placeholder {
+      color: #64748B !important;
+    }
+    html.light-mode #contact a[target="_blank"] {
+      background-color: #FFFFFF !important;
+      color: #0F172A !important;
+      border-color: rgba(15, 23, 42, 0.18) !important;
+    }
+    html.light-mode #contact a[target="_blank"]:hover {
+      background-color: rgba(0, 136, 255, 0.1) !important;
+      border-color: #0088FF !important;
+      color: #0062CC !important;
+    }
+    html.light-mode #reviewsPrevBtn,
+    html.light-mode #reviewsNextBtn {
+      background-color: #FFFFFF !important;
+      color: #0F172A !important;
+      border-color: rgba(15, 23, 42, 0.18) !important;
+    }
+    html.light-mode #packagesModal > div {
+      background-color: #F8FAFC !important;
+      border-color: rgba(0, 136, 255, 0.25) !important;
+    }
+    html.light-mode #floatingWhatsappBtn,
+    html.light-mode #floatingWhatsappBtn span {
+      color: #FFFFFF !important;
+    }
   </style>
 </head>
 <body class="antialiased selection:bg-brand-blue selection:text-white">
@@ -496,27 +555,27 @@
       style="animation-delay: -2.5s;"
     />
 
-    <div class="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-      <!-- Transparent Logo (compact on mobile so CTA stays above the fold) -->
+    <div class="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <!-- Transparent Logo (stacked layers for smooth crossfade with zero horizontal jump) -->
       <div class="mb-2 sm:mb-4 flex justify-center">
-        <div id="heroLogoWrap" class="brand-logo-badge relative w-full flex items-center justify-center min-h-[84px] sm:min-h-[165px]">
+        <div id="heroLogoWrap" class="brand-logo-badge relative mx-auto h-[96px] w-[210px] sm:h-[165px] sm:w-[380px] md:h-[185px] md:w-[440px]">
           <img
             id="heroLogoAnim" fetchpriority="high" decoding="async"
             src="images/asset_005.gif"
             alt="TRAverse AI &amp; Digital Marketing"
-            class="w-full max-w-[210px] sm:max-w-md md:max-w-xl h-auto rounded-2xl object-contain transition-opacity duration-500 opacity-100"
+            class="pointer-events-none absolute inset-0 m-auto max-h-full max-w-full rounded-2xl object-contain opacity-100 transition-opacity duration-700 ease-in-out"
           />
-          <div id="heroFinalLogos" class="hidden w-full flex items-center justify-center opacity-0 transition-opacity duration-500">
+          <div id="heroFinalLogos" class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700 ease-in-out">
             <img
-            src="images/asset_006.webp"
-            alt="TRAverse AI & Digital Marketing"
-            class="logo-dark w-full max-w-[210px] sm:max-w-md md:max-w-xl h-auto object-contain drop-shadow-[0_0_36px_rgba(0,136,255,0.42)]"
-          />
-          <img
-            src="images/asset_007.webp"
-            alt="TRAverse AI & Digital Marketing"
-            class="logo-light w-full max-w-[210px] sm:max-w-md md:max-w-xl h-auto object-contain"
-          />
+              src="images/asset_006.webp"
+              alt="TRAverse AI &amp; Digital Marketing"
+              class="logo-dark max-h-full max-w-full object-contain drop-shadow-[0_0_36px_rgba(0,136,255,0.42)]"
+            />
+            <img
+              src="images/asset_007.webp"
+              alt="TRAverse AI &amp; Digital Marketing"
+              class="logo-light max-h-full max-w-full object-contain"
+            />
           </div>
         </div>
       </div>
@@ -530,9 +589,9 @@
         <span class="font-en">AI-POWERED CREATIVE &amp; MARKETING HUB</span>
       </div>
 
-      <h1 class="hero-headline text-xl font-extrabold leading-snug text-white sm:text-3xl lg:text-[38px]">
+      <h1 class="hero-headline text-xl font-extrabold text-white sm:text-2xl lg:text-[32px]">
         <span data-i18n="heroTitlePre" class="text-white">نصنع حضورك الرقمي بهوية</span>
-        <span class="brand-gradient-text"><span data-i18n="heroTitleAccent">تخطف الأنظار</span> <span data-i18n="heroTitlePost">وتكسب ثقة عملائك</span></span>
+        <span class="hero-accent-solid"><span data-i18n="heroTitleAccent">تخطف الأنظار</span> <span data-i18n="heroTitlePost">وتكسب ثقة عملائك</span></span>
       </h1>
 
       <p data-i18n="heroDescShort" class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-slate-300 sm:mt-4 sm:text-base">
@@ -2347,16 +2406,15 @@
       function settleLogo() {
         if (settled) return;
         settled = true;
-        animImg.classList.remove('opacity-100');
-        animImg.classList.add('opacity-0');
-        finalLogos.classList.remove('hidden');
         requestAnimationFrame(() => {
           finalLogos.classList.remove('opacity-0');
           finalLogos.classList.add('opacity-100');
+          animImg.classList.remove('opacity-100');
+          animImg.classList.add('opacity-0');
         });
         setTimeout(() => {
-          animImg.style.display = 'none';
-        }, 520);
+          animImg.style.visibility = 'hidden';
+        }, 750);
       }
 
       function startTimer() {

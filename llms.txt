@@ -1,8 +1,8 @@
 # TRAverseDigitalSolutions
-> AI-Powered Creative & Marketing Hub based in Egypt, offering bilingual (Arabic/English) visual identity, web & app development, AI marketing, video production, Google Maps optimization, social media management, paid ads, and instant digital subscriptions.
+> AI-Powered Creative & Marketing Hub based in Beni Suef, Egypt (founded 2020), offering bilingual (Arabic/English) visual identity, web & app development, AI marketing, video production, Google Maps optimization, social media management, paid ads, and instant digital subscriptions.
 
 ## Main Sections
-- [Home](https://traverse-digital.github.io/site/): Agency overview, trust highlights, featured clients (48+ brands), workflow, and direct WhatsApp contact.
+- [Home](https://traverse-digital.github.io/site/): Agency overview, trust highlights, 500+ clients served, real client reviews, About Us, FAQ, workflow, and direct WhatsApp contact.
 - [Services](https://traverse-digital.github.io/site/#services): 9 core digital, creative, development, and AI marketing services.
 - [Portfolio](https://traverse-digital.github.io/site/#portfolio): Categorized showcase covering General Social Media Designs (Automotive, Construction, Fashion, Furniture & Kitchens, Teachers, Misc), Medical Field Designs, Logos & Visual Identity, and Social Media Page Management Results.
 - [Digital Subscriptions](https://traverse-digital.github.io/site/#subscriptions): 21 global AI, creative, productivity, and media tools with instant WhatsApp activation.
@@ -24,3 +24,11 @@
 - Facebook: https://www.facebook.com/TRAverseDigitalSolutions
 - Instagram: https://www.instagram.com/Traversedigitalsolutions
 - TikTok: https://www.tiktok.com/@traversedigitalsolutions
+
+## Starting Prices (EGP)
+- Designs: from 150 EGP
+- AI Videos: from 250 EGP
+- Video Editing: 400 EGP / minute
+- Google Maps & Optimization: 1,000 EGP
+- Social Media Management Packages: from 1,500 EGP / month (6 tiers)
+- Web & Mobile App Development: from 4,000 EGP

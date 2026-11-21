@@ -531,9 +531,8 @@
       </div>
 
       <h1 class="hero-headline text-xl font-extrabold leading-snug text-white sm:text-3xl lg:text-[38px]">
-        <span data-i18n="heroTitlePre">نصنع حضورك الرقمي بهوية</span>
-        <span data-i18n="heroTitleAccent" class="brand-gradient-text">تخطف الأنظار</span>
-        <span data-i18n="heroTitlePost">وتكسب ثقة عملائك</span>
+        <span data-i18n="heroTitlePre" class="text-white">نصنع حضورك الرقمي بهوية</span>
+        <span class="brand-gradient-text"><span data-i18n="heroTitleAccent">تخطف الأنظار</span> <span data-i18n="heroTitlePost">وتكسب ثقة عملائك</span></span>
       </h1>
 
       <p data-i18n="heroDescShort" class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-slate-300 sm:mt-4 sm:text-base">
@@ -698,57 +697,40 @@
 
   <!-- Services Section (Standalone) -->
 
-  <!-- Client Testimonials Section (Real Facebook Messages & Comments) -->
-  <section id="testimonials" class="border-t border-white/10 bg-[#05070C] py-14 sm:py-20">
+  <!-- Client Testimonials Carousel (All 16 Real Reviews, Left/Right Arrows, Service Tags Only) -->
+  <section id="testimonials" class="relative overflow-hidden border-t border-white/10 bg-[#05070C] py-14 sm:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <span class="font-en text-xs font-bold tracking-wider text-brand-blueLight">CLIENT REVIEWS</span>
-        <h2 data-i18n="reviewsHeading" class="mt-2 text-2xl font-black text-white sm:text-3xl">آراء حقيقية من عملائنا</h2>
-        <p data-i18n="reviewsSub" class="mt-2 text-sm text-slate-400">مقتطفات حقيقية من محادثات وتعليقات عملائنا على فيسبوك (مع الحفاظ على خصوصية أصحاب الرسائل الخاصة).</p>
+      <div class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+        <div>
+          <span class="font-en text-xs font-bold tracking-wider text-brand-blueLight">CLIENT REVIEWS</span>
+          <h2 data-i18n="reviewsHeading" class="mt-2 text-2xl font-black text-white sm:text-3xl">آراء حقيقية من عملائنا</h2>
+          <p data-i18n="reviewsSub" class="mt-2 max-w-2xl text-sm text-slate-400">مقتطفات حقيقية من محادثات وتعليقات عملائنا على فيسبوك — تنقّل بالأسهم لتصفح جميع الآراء.</p>
+        </div>
+        <div class="flex items-center gap-2" dir="ltr">
+          <button
+            type="button"
+            id="reviewsPrevBtn"
+            aria-label="Previous reviews"
+            class="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white transition hover:border-brand-blue hover:bg-brand-blue/20"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button
+            type="button"
+            id="reviewsNextBtn"
+            aria-label="Next reviews"
+            class="flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white transition hover:border-brand-blue hover:bg-brand-blue/20"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
       </div>
-      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«شغل عالمي. محترف والله، والكتابة العربي مظبوطه محدش بيعرف يظبطها كده. ما شاء الله عليك.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">صاحب الرسالة</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">فيديو وكتابة عربية</span>
-          </div>
-        </article>
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«و انت برنس في شغلك، و فعلا مركز ناصر كان محتاج حد زيك.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">صاحب الرسالة</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">فيديو — مركز ناصر</span>
-          </div>
-        </article>
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«احلي شركه دقه وابداع وحسن تعامل.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">فاتن أحمد</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">تعليق عام على فيسبوك</span>
-          </div>
-        </article>
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«متشكر ليك يا استاذ طاهر ل تعبك معايا، وربنا يكرمنا جميعا يارب.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">صاحب الرسالة</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">إدارة صفحة فيسبوك</span>
-          </div>
-        </article>
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«تسلم ا. طاهر، كله بفضل مجهودك، ربنا يبارك فيك.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">صاحب الرسالة</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">إعلانات ممولة</span>
-          </div>
-        </article>
-        <article class="review-card glass-card flex flex-col justify-between rounded-2xl p-6">
-          <p class="review-quote text-sm leading-relaxed text-slate-200">«انا رشحتك لد ايمن زميل لينا عايتواصل معاك باذن الله.»</p>
-          <div class="mt-5 flex items-center justify-between gap-2 border-t border-white/10 pt-3">
-            <span class="text-xs font-bold text-white">صاحب الرسالة</span>
-            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">ترشيح عميل</span>
-          </div>
-        </article>
+
+      <div
+        id="reviewsCarousel"
+        class="mt-8 flex gap-5 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
+        <!-- Rendered by JS (16 reviews) -->
       </div>
     </div>
   </section>
@@ -784,55 +766,6 @@
 
       <div id="servicesGrid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <!-- Rendered by JS -->
-      </div>
-
-      <!-- Social Media Management Packages Gallery (Starts from 1,500 EGP/mo) -->
-      <div id="packagesShowcase" class="mt-16 border-t border-white/10 pt-12">
-        <div class="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-end">
-          <div>
-            <span class="font-en text-xs font-bold tracking-wider text-brand-blueLight">MONTHLY PACKAGES • FROM 1,500 EGP</span>
-            <h3 data-i18n="packagesHeading" class="mt-1.5 text-xl font-black text-white sm:text-3xl">باقات إدارة صفحات السوشيال ميديا</h3>
-            <p data-i18n="packagesSub" class="mt-1.5 max-w-2xl text-sm text-slate-400">6 باقات شهرية مرنة تبدأ من 1,500 ج.م شهرياً — اضغط على أي باقة لتكبيرها أو اطلبها مباشرة عبر واتساب.</p>
-          </div>
-        </div>
-        <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_1.webp', 'باقة إدارة السوشيال ميديا 1')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_1.webp" alt="باقة إدارة صفحات السوشيال ميديا 1 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_2.webp', 'باقة إدارة السوشيال ميديا 2')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_2.webp" alt="باقة إدارة صفحات السوشيال ميديا 2 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_3.webp', 'باقة إدارة السوشيال ميديا 3')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_3.webp" alt="باقة إدارة صفحات السوشيال ميديا 3 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_4.webp', 'باقة إدارة السوشيال ميديا 4')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_4.webp" alt="باقة إدارة صفحات السوشيال ميديا 4 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_5.webp', 'باقة إدارة السوشيال ميديا 5')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_5.webp" alt="باقة إدارة صفحات السوشيال ميديا 5 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-          <div class="glass-card overflow-hidden rounded-2xl p-3 flex flex-col justify-between">
-            <button type="button" onclick="openLightbox('images/package_6.webp', 'باقة إدارة السوشيال ميديا 6')" class="group relative block w-full overflow-hidden rounded-xl">
-              <img src="images/package_6.webp" alt="باقة إدارة صفحات السوشيال ميديا 6 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="w-full h-auto rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
-            </button>
-            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -1018,18 +951,18 @@
   </section>
 
 
-  <!-- About Us Section (Local SEO: Beni Suef, Egypt) -->
+  <!-- About Us Section -->
   <section id="about-us" class="border-t border-white/10 bg-[#060911] py-14 sm:py-20">
     <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       <div class="glass-card rounded-3xl p-6 sm:p-10">
-        <span class="font-en text-xs font-bold tracking-wider text-brand-blueLight">ABOUT TRAVERSE • BENI SUEF, EGYPT</span>
+        <span class="font-en text-xs font-bold tracking-wider text-brand-blueLight">ABOUT TRAVERSE • GLOBAL ONLINE TEAM</span>
         <h2 data-i18n="aboutHeading" class="mt-2 text-2xl font-black text-white sm:text-3xl">من نحن؟</h2>
         <p data-i18n="aboutBody1" class="mt-4 text-sm leading-loose text-slate-300 sm:text-base">
-          تأسست <strong class="text-white">TRAverseDigitalSolutions</strong> عام <strong class="text-white">2020</strong> في <strong class="text-white">بني سويف، مصر</strong> على يد <strong class="text-white">طاهر عبد العال</strong> (خريج حاسبات ومعلومات بخبرة تتجاوز 8 سنوات في البرمجة والذكاء الاصطناعي والتسويق الرقمي). نساعد أصحاب الأنشطة التجارية والعيادات والشركات في بني سويف وجميع محافظات مصر والوطن العربي على بناء حضور رقمي متكامل يجمع بين الهوية البصرية القوية، إدارة السوشيال ميديا، الإعلانات الممولة، وفيديوهات الذكاء الاصطناعي.
+          تأسست <strong class="text-white">TRAverseDigitalSolutions</strong> عام <strong class="text-white">2020</strong> على يد <strong class="text-white">م. طاهر أحمد سيد</strong>، الذي يمتلك خبرة كبيرة في مجال العمل الحر والحلول الرقمية. أسّس <strong class="text-white">م. طاهر عبد العال</strong> هذا الفريق ليكون قوة حقيقية تساعد العملاء فعلاً على النمو، حيث يضم فريقنا نخبة من المتخصصين من عدة دول بخبرات كبيرة تفوق <strong class="text-white">15 سنة</strong> في جميع مجالات التصميم والبرمجة والتسويق بالذكاء الاصطناعي وإدارة السوشيال ميديا، ونعمل <strong class="text-white">أونلاين بالكامل</strong> لخدمة عملائنا في مصر والوطن العربي والعالم.
         </p>
         <div class="mt-6 flex flex-wrap gap-3 text-xs font-bold">
-          <span class="rounded-xl border border-brand-blue/30 bg-brand-blue/10 px-3.5 py-2 text-brand-blueLight" data-i18n="aboutBadge1">مقرنا: بني سويف، مصر</span>
-          <span class="rounded-xl border border-white/10 bg-white/5 px-3.5 py-2 text-slate-200" data-i18n="aboutBadge2">تأسست منذ 2020</span>
+          <span class="rounded-xl border border-brand-blue/30 bg-brand-blue/10 px-3.5 py-2 text-brand-blueLight" data-i18n="aboutBadge1">عمل أونلاين بالكامل</span>
+          <span class="rounded-xl border border-white/10 bg-white/5 px-3.5 py-2 text-slate-200" data-i18n="aboutBadge2">فريق دولي بخبرة +15 سنة</span>
           <span class="rounded-xl border border-white/10 bg-white/5 px-3.5 py-2 text-slate-200" data-i18n="aboutBadge3">أكثر من 500 عميل</span>
         </div>
       </div>
@@ -1067,10 +1000,10 @@
         </details>
         <details class="faq-item rounded-2xl border border-white/10 bg-[#0B101B] p-5">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-bold text-white sm:text-base">
-            <span data-i18n="faq4Q">هل تعملون مع عملاء خارج بني سويف؟</span>
+            <span data-i18n="faq4Q">كيف نعمل معكم وأين تقدمون خدماتكم؟</span>
             <svg class="faq-chevron h-5 w-5 shrink-0 text-brand-blueLight transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </summary>
-          <p data-i18n="faq4A" class="mt-3 text-sm leading-relaxed text-slate-400">بالتأكيد — مقرنا في بني سويف ونعمل أونلاين مع عملاء في القاهرة والإسكندرية وجميع محافظات مصر، وكذلك عملاء في السعودية والإمارات والكويت وباقي الدول العربية.</p>
+          <p data-i18n="faq4A" class="mt-3 text-sm leading-relaxed text-slate-400">نعمل أونلاين بالكامل عبر فريق متعدد الجنسيات بخبرات تتجاوز 15 عاماً، ونخدم عملاءنا في مصر والسعودية والإمارات والكويت وجميع دول الوطن العربي والعالم بمتابعة مباشرة وسريعة عبر واتساب.</p>
         </details>
       </div>
     </div>
@@ -1156,10 +1089,77 @@
           <a href="https://www.tiktok.com/@traversedigitalsolutions" target="_blank" rel="noopener noreferrer" class="hover:text-brand-blue">TikTok</a>
           <a href="https://wa.me/201007047573" target="_blank" rel="noopener noreferrer" class="text-brand-blueLight hover:underline">WhatsApp</a>
         </div>
-        <p data-i18n="footerCopy" class="text-xs text-slate-400">© 2026 TRAverseDigitalSolutions — بني سويف، مصر. جميع الحقوق محفوظة.</p>
+        <p data-i18n="footerCopy" class="text-xs text-slate-400">© 2026 TRAverseDigitalSolutions. جميع الحقوق محفوظة.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Social Media Management Packages Modal (Triggered from Management Service Preview) -->
+  <div id="packagesModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 p-3 sm:p-6 backdrop-blur-sm">
+    <div class="relative flex max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-3xl border border-brand-blue/35 bg-[#080D18] shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-5 py-4 sm:px-7">
+        <div>
+          <span class="font-en text-[11px] font-bold tracking-wider text-brand-blueLight">MONTHLY PACKAGES • FROM 1,500 EGP</span>
+          <h3 data-i18n="packagesHeading" class="text-lg font-black text-white sm:text-2xl">باقات إدارة صفحات السوشيال ميديا</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="closePackagesModal(); goToPageResultsPortfolio();"
+            class="rounded-xl border border-brand-blue/40 bg-brand-blue/10 px-3.5 py-2 text-xs font-bold text-brand-blueLight transition hover:bg-brand-blue hover:text-white"
+            data-i18n="viewPageResultsBtn"
+          >معاينة نتائج إدارة الصفحات</button>
+          <button
+            type="button"
+            onclick="closePackagesModal();"
+            aria-label="إغلاق"
+            class="flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-lg font-bold text-white transition hover:border-brand-blue hover:bg-brand-blue/20"
+          >&times;</button>
+        </div>
+      </div>
+      <div class="overflow-y-auto p-5 sm:p-7">
+        <p data-i18n="packagesSub" class="mb-5 text-sm text-slate-400">6 باقات شهرية مرنة تبدأ من 1,500 ج.م شهرياً — اضغط على أي باقة لتكبيرها أو اطلبها مباشرة عبر واتساب.</p>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_1.webp', 'باقة إدارة السوشيال ميديا 1')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_1.webp" alt="باقة إدارة صفحات السوشيال ميديا 1 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_2.webp', 'باقة إدارة السوشيال ميديا 2')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_2.webp" alt="باقة إدارة صفحات السوشيال ميديا 2 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_3.webp', 'باقة إدارة السوشيال ميديا 3')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_3.webp" alt="باقة إدارة صفحات السوشيال ميديا 3 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_4.webp', 'باقة إدارة السوشيال ميديا 4')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_4.webp" alt="باقة إدارة صفحات السوشيال ميديا 4 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_5.webp', 'باقة إدارة السوشيال ميديا 5')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_5.webp" alt="باقة إدارة صفحات السوشيال ميديا 5 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+          <div class="glass-card flex flex-col justify-between overflow-hidden rounded-2xl p-3">
+            <button type="button" onclick="openLightbox('images/package_6.webp', 'باقة إدارة السوشيال ميديا 6')" class="group relative block w-full overflow-hidden rounded-xl">
+              <img src="images/package_6.webp" alt="باقة إدارة صفحات السوشيال ميديا 6 — TRAverseDigitalSolutions" loading="lazy" decoding="async" class="h-auto w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]" />
+            </button>
+            <a href="https://wa.me/201007047573?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20TRAverseDigitalSolutions%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." target="_blank" rel="noopener noreferrer" class="mt-3 block w-full rounded-xl bg-brand-blue px-4 py-2.5 text-center text-xs font-bold text-white transition hover:bg-brand-blueDark" data-i18n="orderPackageBtn">اطلب هذه الباقة عبر واتساب</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Portfolio Modal -->
   <div id="portfolioModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
@@ -1216,11 +1216,12 @@
         heroPrimaryCta: 'اطلب عرض سعر لمشروعك',
         floatingWaLabel: 'واتساب مباشر',
         reviewsHeading: 'آراء حقيقية من عملائنا',
-        reviewsSub: 'مقتطفات حقيقية من محادثات وتعليقات عملائنا على فيسبوك (مع الحفاظ على خصوصية أصحاب الرسائل الخاصة).',
+        reviewsSub: 'مقتطفات حقيقية من محادثات وتعليقات عملائنا على فيسبوك — تنقّل بالأسهم لتصفح جميع الآراء.',
+        viewPageResultsBtn: 'معاينة نتائج إدارة الصفحات',
         aboutHeading: 'من نحن؟',
-        aboutBody1: 'تأسست TRAverseDigitalSolutions عام 2020 في بني سويف، مصر على يد طاهر عبد العال (خريج حاسبات ومعلومات بخبرة تتجاوز 8 سنوات في البرمجة والذكاء الاصطناعي والتسويق الرقمي). نساعد أصحاب الأنشطة التجارية والعيادات والشركات في بني سويف وجميع محافظات مصر والوطن العربي على بناء حضور رقمي متكامل يجمع بين الهوية البصرية القوية، إدارة السوشيال ميديا، الإعلانات الممولة، وفيديوهات الذكاء الاصطناعي.',
-        aboutBadge1: 'مقرنا: بني سويف، مصر',
-        aboutBadge2: 'تأسست منذ 2020',
+        aboutBody1: 'تأسست TRAverseDigitalSolutions عام 2020 على يد م. طاهر أحمد سيد، صاحب خبرة كبيرة في مجال العمل الحر والحلول الرقمية. أسّس م. طاهر عبد العال هذا الفريق ليكون قوة حقيقية تساعد العملاء فعلاً على النمو، حيث يضم فريقنا نخبة من المتخصصين من عدة دول بخبرات كبيرة تفوق 15 سنة في جميع مجالات التصميم والبرمجة والتسويق بالذكاء الاصطناعي وإدارة السوشيال ميديا، ونعمل أونلاين بالكامل لخدمة عملائنا في مصر والوطن العربي والعالم.',
+        aboutBadge1: 'عمل أونلاين بالكامل',
+        aboutBadge2: 'فريق دولي بخبرة +15 سنة',
         aboutBadge3: 'أكثر من 500 عميل',
         faqHeading: 'الأسئلة الشائعة',
         faq1Q: 'ما هي الأسعار الاسترشادية للخدمات؟',
@@ -1229,8 +1230,8 @@
         faq2A: 'تصميمات السوشيال ميديا وفيديوهات الذكاء الاصطناعي تُسلّم عادةً خلال 24 إلى 72 ساعة، بينما تستغرق الهويات البصرية الكاملة والمواقع الإلكترونية من 5 إلى 14 يوماً حسب حجم المشروع، مع الالتزام بموعد تسليم متفق عليه قبل البدء.',
         faq3Q: 'هل توجد تعديلات على التصاميم أو الفيديوهات بعد التسليم الأولي؟',
         faq3A: 'نعم، نتيح لك مراجعة العمل وطلب التعديلات المتفق عليها حتى تصل النتيجة للشكل الذي يرضيك ويعبّر عن نشاطك بدقة.',
-        faq4Q: 'هل تعملون مع عملاء خارج بني سويف؟',
-        faq4A: 'بالتأكيد — مقرنا في بني سويف ونعمل أونلاين مع عملاء في القاهرة والإسكندرية وجميع محافظات مصر، وكذلك عملاء في السعودية والإمارات والكويت وباقي الدول العربية.',
+        faq4Q: 'كيف نعمل معكم وأين تقدمون خدماتكم؟',
+        faq4A: 'نعمل أونلاين بالكامل عبر فريق متعدد الجنسيات بخبرات تتجاوز 15 عاماً، ونخدم عملاءنا في مصر والسعودية والإمارات والكويت وجميع دول الوطن العربي والعالم بمتابعة مباشرة وسريعة عبر واتساب.',
         packagesHeading: 'باقات إدارة صفحات السوشيال ميديا',
         packagesSub: '6 باقات شهرية مرنة تبدأ من 1,500 ج.م شهرياً — اضغط على أي باقة لتكبيرها أو اطلبها مباشرة عبر واتساب.',
         orderPackageBtn: 'اطلب هذه الباقة عبر واتساب',
@@ -1299,7 +1300,7 @@
         formNotesLabel: 'تفاصيل المشروع',
         formNotesPlaceholder: 'اكتب نبذة سريعة عن احتياجك...',
         formSubmit: 'إرسال الطلب عبر واتساب (00201007047573)',
-        footerCopy: '© 2026 TRAverseDigitalSolutions — بني سويف، مصر. جميع الحقوق محفوظة.',
+        footerCopy: '© 2026 TRAverseDigitalSolutions. جميع الحقوق محفوظة.',
         modalBadge: 'معرض الأعمال',
         modalFooterNote: 'جاهز لإرفاق صور وفيديوهات أعمالك الحقيقية في المرحلة القادمة',
         modalOrderBtn: 'اطلب هذه الخدمة عبر واتساب',
@@ -1347,11 +1348,12 @@
         heroPrimaryCta: 'Request a Project Quote',
         floatingWaLabel: 'WhatsApp Us',
         reviewsHeading: 'Real Client Reviews',
-        reviewsSub: 'Authentic excerpts from client messages and comments on our Facebook page (with private senders anonymized).',
+        reviewsSub: 'Authentic excerpts from client messages and comments on Facebook — use the arrows to browse all reviews.',
+        viewPageResultsBtn: 'View Page Results',
         aboutHeading: 'Who We Are',
-        aboutBody1: 'Founded in 2020 in Beni Suef, Egypt by Taher Abdelaal (Computer Science graduate with 8+ years in development, AI, and digital marketing), TRAverseDigitalSolutions helps businesses, clinics, and brands across Egypt and the Arab world build a strong digital presence through visual identity, social media management, paid ads, and AI video production.',
-        aboutBadge1: 'Based in Beni Suef, Egypt',
-        aboutBadge2: 'Founded in 2020',
+        aboutBody1: 'Founded in 2020 by Eng. Taher Ahmed Sayed, who brings extensive freelancing and digital experience. Eng. Taher Abdelaal built this team as a true growth partner for clients, uniting specialists from multiple countries with over 15 years of combined expertise across design, development, AI marketing, and social media management — operating 100% online for clients worldwide.',
+        aboutBadge1: '100% Online Agency',
+        aboutBadge2: 'International Team (15+ Yrs)',
         aboutBadge3: '500+ Clients Served',
         faqHeading: 'Frequently Asked Questions',
         faq1Q: 'What are your starting prices?',
@@ -1360,8 +1362,8 @@
         faq2A: 'Social media designs and AI videos are typically delivered within 24–72 hours, while full brand identities and websites take 5–14 days depending on project scope.',
         faq3Q: 'Are revisions included?',
         faq3A: 'Yes, we review drafts with you and apply agreed revisions so the final output matches your brand accurately.',
-        faq4Q: 'Do you work with clients outside Beni Suef?',
-        faq4A: 'Absolutely — we are based in Beni Suef and work remotely with clients across all Egyptian governorates as well as Saudi Arabia, the UAE, Kuwait, and the wider Arab world.',
+        faq4Q: 'How do you work and where do you serve clients?',
+        faq4A: 'We operate 100% online with an international team holding 15+ years of expertise, serving clients across Egypt, Saudi Arabia, UAE, Kuwait, and worldwide via fast, direct WhatsApp follow-up.',
         packagesHeading: 'Social Media Management Packages',
         packagesSub: '6 flexible monthly tiers starting from 1,500 EGP/mo — tap any package to zoom or order directly on WhatsApp.',
         orderPackageBtn: 'Order This Package on WhatsApp',
@@ -1430,7 +1432,7 @@
         formNotesLabel: 'Project Details',
         formNotesPlaceholder: 'Write a brief summary of what you need...',
         formSubmit: 'Send Request via WhatsApp (00201007047573)',
-        footerCopy: '© 2026 TRAverseDigitalSolutions — Beni Suef, Egypt. All rights reserved.',
+        footerCopy: '© 2026 TRAverseDigitalSolutions. All rights reserved.',
         modalBadge: 'Portfolio Showcase',
         modalFooterNote: 'Ready to attach your real project images & videos in the next phase',
         modalOrderBtn: 'Order This Service on WhatsApp',
@@ -1672,7 +1674,7 @@
         } else if (isBranding) {
           cardClickAttr = `onclick="if(!event.target.closest('a,button')){goToBrandingPortfolio();}"`;
         } else if (isSocialManagement) {
-          cardClickAttr = `onclick="if(!event.target.closest('a,button')){goToPageResultsPortfolio();}"`;
+          cardClickAttr = `onclick="if(!event.target.closest('a,button')){openPackagesModal();}"`;
         }
         const cardCursorClass = (isAiMarketing || isBranding || isSocialManagement) ? ' cursor-pointer hover:border-brand-blue' : '';
         let previewBtnHtml = '';
@@ -1681,7 +1683,7 @@
         } else if (isBranding) {
           previewBtnHtml = `<button type="button" onclick="goToBrandingPortfolio();" class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-xs font-bold text-white transition hover:border-brand-blue hover:bg-brand-blue/15">${previewLabel}</button>`;
         } else if (isSocialManagement) {
-          previewBtnHtml = `<button type="button" onclick="goToPageResultsPortfolio();" class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-xs font-bold text-white transition hover:border-brand-blue hover:bg-brand-blue/15">${previewLabel}</button>`;
+          previewBtnHtml = `<button type="button" onclick="openPackagesModal();" class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-xs font-bold text-white transition hover:border-brand-blue hover:bg-brand-blue/15">${previewLabel}</button>`;
         }
 
         return `
@@ -2238,6 +2240,92 @@
       const isLight = document.documentElement.classList.toggle('light-mode');
       themeIconSun.classList.toggle('hidden', isLight);
       themeIconMoon.classList.toggle('hidden', !isLight);
+    });
+
+
+    // Client Reviews Carousel (All 16 real reviews, service tags only)
+    const reviewsData = [
+      { text: '«شغل عالمي. محترف والله، والكتابة العربي مظبوطه محدش بيعرف يظبطها كده. ما شاء الله عليك.»', service: 'فيديو وكتابة عربية' },
+      { text: '«و انت برنس في شغلك، و فعلا مركز ناصر كان محتاج حد زيك.»', service: 'فيديو — مركز ناصر' },
+      { text: '«احلي شركه دقه وابداع وحسن تعامل.»', service: 'تعليق عام على فيسبوك — فاتن أحمد' },
+      { text: '«متشكر ليك يا استاذ طاهر ل تعبك معايا، وربنا يكرمنا جميعا يارب.»', service: 'إدارة صفحة فيسبوك' },
+      { text: '«تسلم ا. طاهر، كله بفضل مجهودك، ربنا يبارك فيك.»', service: 'إعلانات ممولة' },
+      { text: '«انا رشحتك لد ايمن زميل لينا عايتواصل معاك باذن الله.»', service: 'ترشيح عميل' },
+      { text: '«ممتازة ومبدع ومتألق دائماً يارب العالمين، استاذ طاهر.»', service: 'فيديو' },
+      { text: '«إزاي بس تقول كدا الفيديو تحفة بجد ويسلم عقلك يا طاهر.»', service: 'فيديو' },
+      { text: '«فوق الرأس يا كبير. تسلم ايدك يا غالي، الله ينور عليك، فيديو جميل.»', service: 'فيديو' },
+      { text: '«بصراحه جامد جدا. تسلم ايدك.»', service: 'تصميم' },
+      { text: '«يباشا زي الفل ده اللي كان ف دماغي، يباركلك. حاجه جميله.»', service: 'فيديو' },
+      { text: '«ربنا يعينك والله، شكرا جدا كفايه وقتك ومجهودك... شكرا جدا لحضرتك والله كفايه تعبك.»', service: 'رأي عميل' },
+      { text: '«ممتاز يا هندسه والله.»', service: 'فيديو' },
+      { text: '«تحفه يا طاهر.»', service: 'فيديو' },
+      { text: '«اكيد والله يا غالي، ما اتحرمش من زوقك، وانا مبسوط ان احنا اشتغلنا معاك، ربنا يوفقك يا غالي.»', service: 'رأي عميل' },
+      { text: '«شكرا جدااااا لحضرتك، حلو اوي. شكرا لحضرتك اوووي ولذوق حضرتك.»', service: 'تصميم' }
+    ];
+
+    (function initReviewsCarousel() {
+      const track = document.getElementById('reviewsCarousel');
+      const prevBtn = document.getElementById('reviewsPrevBtn');
+      const nextBtn = document.getElementById('reviewsNextBtn');
+      if (!track) return;
+
+      track.innerHTML = reviewsData.map(r => `
+        <article class="review-card glass-card flex w-[285px] shrink-0 snap-start flex-col justify-between rounded-2xl p-6 sm:w-[330px]">
+          <div>
+            <div class="mb-2 text-2xl font-black leading-none text-brand-blueLight/70">“</div>
+            <p class="review-quote text-sm leading-relaxed text-slate-200">${r.text}</p>
+          </div>
+          <div class="mt-5 flex items-center justify-end border-t border-white/10 pt-3">
+            <span class="rounded-full border border-brand-blue/30 bg-brand-blue/10 px-3 py-1 text-[11px] font-bold text-brand-blueLight">${r.service}</span>
+          </div>
+        </article>
+      `).join('');
+
+      const step = () => Math.max(300, Math.floor(track.clientWidth * 0.8));
+      function scrollReviews(dir) {
+        const isRtl = document.documentElement.dir === 'rtl';
+        const delta = dir * step();
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (maxScroll <= 10) return;
+        const current = Math.abs(track.scrollLeft);
+        if ((isRtl && dir < 0 && current >= maxScroll - 10) || (!isRtl && dir > 0 && current >= maxScroll - 10)) {
+          track.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          track.scrollBy({ left: delta, behavior: 'smooth' });
+        }
+      }
+
+      prevBtn?.addEventListener('click', () => scrollReviews(-1));
+      nextBtn?.addEventListener('click', () => scrollReviews(1));
+
+      let autoTimer = setInterval(() => {
+        const isRtl = document.documentElement.dir === 'rtl';
+        scrollReviews(isRtl ? -1 : 1);
+      }, 4500);
+
+      track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+      track.addEventListener('touchstart', () => clearInterval(autoTimer), { passive: true });
+    })();
+
+    // Social Media Packages Modal
+    function openPackagesModal() {
+      const m = document.getElementById('packagesModal');
+      if (!m) return;
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePackagesModal() {
+      const m = document.getElementById('packagesModal');
+      if (!m) return;
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    window.openPackagesModal = openPackagesModal;
+    window.closePackagesModal = closePackagesModal;
+    document.getElementById('packagesModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'packagesModal') closePackagesModal();
     });
 
     // Init

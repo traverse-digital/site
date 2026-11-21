@@ -1,5 +1,5 @@
 # TRAverseDigitalSolutions
-> AI-Powered Creative & Marketing Hub based in Beni Suef, Egypt (founded 2020), offering bilingual (Arabic/English) visual identity, web & app development, AI marketing, video production, Google Maps optimization, social media management, paid ads, and instant digital subscriptions.
+> AI-Powered Creative & Marketing Hub 100% online agency founded in 2020 by Eng. Taher Ahmed Sayed with an international team (15+ years combined experience), offering bilingual (Arabic/English) visual identity, web & app development, AI marketing, video production, Google Maps optimization, social media management, paid ads, and instant digital subscriptions.
 
 ## Main Sections
 - [Home](https://traverse-digital.github.io/site/): Agency overview, trust highlights, 500+ clients served, real client reviews, About Us, FAQ, workflow, and direct WhatsApp contact.
